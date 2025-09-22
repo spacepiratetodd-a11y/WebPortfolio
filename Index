@@ -13,7 +13,7 @@
 </head>
 
 <!-- Toggle light-page ↔ dark-page -->
-
+    <body>
 <body class="light-page">
 
     <nav id="site-nav" class="navbar navbar-expand-sm navbar-dark site-nav" role="navigation"
