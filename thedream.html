@@ -132,9 +132,22 @@
 
         <!-- Box -->
         <div class="box mb-4">
-            <h3 class="h5">Plain Box</h3>
-            <p class="mb-0">This is a plain div styled as a surface. <a href="about.html">About Me</a></p>
-        </div>
+            <div class="container mt-3">
+  <h3>Toast Example</h3>
+  <p>In this example, we use a button to show the toast message.</p>
+
+  <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+  
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Toast Header</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>Some text inside the toast body</p>
+    </div>
+  </div>
+</div>
 
         <!-- Card -->
         <div class="card shadow-sm mb-4" style="max-width: 40rem;">
@@ -146,12 +159,7 @@
                 
             </div>
         </div>
-
-
-  
     </main>
-
-
 </body>
 
 </html>
