@@ -53,22 +53,124 @@
     </nav>
 
     <!-- Main content -->
-    <main class="container py-4">
-        <h1 class="mb-2">Save a branch</h1>
-        <p class="mb-3">
-            This paragraph uses the page text color. Here’s a <a href="#">content link</a>.
-        </p>
+    <main class="container p-5 my-5 text-center">
+        <h1 class="mb-2"><p class="p3">Flying Mile High</h1>
+        <p class="mb-3">This is what it's all about</p>
 
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="dji1.jpg" alt="Aerial view of a cityscape at sunset showing mid-rise apartment buildings, office complexes, green spaces, and a wide road with cars. The sky is clear and calm, creating a peaceful and serene atmosphere." class="d-block mx-auto" style="width:50%">
+    </div>
+    <div class="carousel-item">
+    <img src="dji2.jpg" alt="Two modern high-rise residential towers with reflective glass windows rise above a neighborhood of low-rise apartment buildings and green trees under a clear blue sky. The scene feels peaceful and vibrant, with lush greenery and bright sunlight highlighting the contrast between urban development and nature." class="d-block mx-auto" style="width:50%">
+    </div>
+    <div class="carousel-item">
+    <img src="dji3.jpg" alt="Downtown Denver skyline with tall office buildings and residential towers rising above tree-lined streets and mid-rise apartments. The sky is bright blue with scattered clouds, creating a vibrant and energetic atmosphere." class="d-block mx-auto" style="width:50%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<div class="container-fluid mt-3">
+  <div class="container mt-3">
+  <h2>Aerial Photography at its finest</h2>
+  <p></p>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          <strong>Experience</strong>
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        <strong>Education</strong>
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          <strong>Equipment</strong>
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
         <!-- Hero -->
         <section class="p-5 mb-4 bg-body-tertiary rounded-3">
-            <h2 class="display-6 mb-3">I am the Hero of this section</h2>
-            <a class="btn btn-primary" href="#">More</a>
+            <h2 class="display-6 mb-3">From Dirt to Data</h2>
+            <p>Click the image below to visit my website and see a portfolio of my work!</p>
+            <a href="https://www.BaddFoxx.com" style="display: inline-block; border: none; padding: 0;">
+  <img src="BF2.JPG" alt="Button Image" style="width: 100px; height: auto;">
+</a>
+            
         </section>
 
         <!-- Box -->
         <div class="box mb-4">
-            <h3 class="h5">Plain Box</h3>
-            <p class="mb-0">This is a plain div styled as a surface. <a href="#">Read more</a></p>
+            <div class="container mt-3">
+  <h3>Toast Example</h3>
+  <p>In this example, we use a button to show the toast message.</p>
+
+  <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+  
+  <div class="toast">
+    <div class="toast-header">
+      <strong class="me-auto">Accessibility and Inclusion</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      <p>All three pages of this website are in identical styles to simplify the experience for users who can be overstimulated!</p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>
         </div>
 
         <!-- Card -->
